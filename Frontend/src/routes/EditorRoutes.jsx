@@ -1,16 +1,12 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import { IoLogoPython, IoHardwareChipOutline } from "react-icons/io5";
+import { IoLogoPython } from "react-icons/io5";
 import {
   SiJavascript,
   SiRust,
-  SiMongodb,
   SiSwift,
   SiRuby,
   SiDart,
-  SiPerl,
-  SiScala,
-  SiJulia,
 } from "react-icons/si";
 import { FaGolang } from "react-icons/fa6";
 import { RiJavaFill } from "react-icons/ri";
@@ -44,17 +40,12 @@ import sampleJava from "../samples/java.java?raw";
 import sampleCsharp from "../samples/csharp.cs?raw";
 import sampleRust from "../samples/rust.rs?raw";
 import sampleGo from "../samples/go.go?raw";
-import sampleVerilog from "../samples/verilog.v?raw";
 import sampleSQL from "../samples/sql.sql?raw";
-import sampleMongoDB from "../samples/mongodb.js?raw";
 import sampleSwift from "../samples/swift.swift?raw";
 import sampleRuby from "../samples/ruby.rb?raw";
 import sampleTypeScript from "../samples/typescript.ts?raw";
 import sampleDart from "../samples/dart.dart?raw";
 import sampleKotlin from "../samples/kotlin.kt?raw";
-import samplePerl from "../samples/perl.pl?raw";
-import sampleScala from "../samples/scala.scala?raw";
-import sampleJulia from "../samples/julia.jl?raw";
 import sampleHtml from "../samples/index.html?raw";
 import sampleCSS from "../samples/style.css?raw";
 import sampleJavaScript from "../samples/script.js?raw";
@@ -129,22 +120,10 @@ const languages = [
     sampleCode: sampleGo,
   },
   {
-    path: "/verilog",
-    language: "verilog",
-    icon: IoHardwareChipOutline,
-    sampleCode: sampleVerilog,
-  },
-  {
     path: "/sql",
     language: "sql",
     icon: PiFileSqlFill,
     sampleCode: sampleSQL,
-  },
-  {
-    path: "/mongodb",
-    language: "mongodb",
-    icon: SiMongodb,
-    sampleCode: sampleMongoDB,
   },
   {
     path: "/swift",
@@ -175,24 +154,6 @@ const languages = [
     language: "kotlin",
     icon: TbBrandKotlin,
     sampleCode: sampleKotlin,
-  },
-  {
-    path: "/perl",
-    language: "perl",
-    icon: SiPerl,
-    sampleCode: samplePerl,
-  },
-  {
-    path: "/scala",
-    language: "scala",
-    icon: SiScala,
-    sampleCode: sampleScala,
-  },
-  {
-    path: "/julia",
-    language: "julia",
-    icon: SiJulia,
-    sampleCode: sampleJulia,
   },
 ];
 

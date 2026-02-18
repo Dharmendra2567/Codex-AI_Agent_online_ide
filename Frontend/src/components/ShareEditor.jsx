@@ -15,13 +15,9 @@ import { IoLogoPython, IoHardwareChipOutline } from "react-icons/io5";
 import {
   SiJavascript,
   SiRust,
-  SiMongodb,
   SiSwift,
   SiRuby,
   SiDart,
-  SiPerl,
-  SiScala,
-  SiJulia,
 } from "react-icons/si";
 import { RiJavaFill } from "react-icons/ri";
 import {
@@ -39,27 +35,22 @@ const languageIcons = {
   python: IoLogoPython,
   javascript: SiJavascript,
   rust: SiRust,
-  mongodb: SiMongodb,
-  swift: SiSwift,
-  ruby: SiRuby,
   dart: SiDart,
-  perl: SiPerl,
-  scala: SiScala,
-  julia: SiJulia,
   go: FaGolang,
   java: RiJavaFill,
   cpp: PiFileCppFill,
   csharp: PiFileCSharpFill,
   c: PiFileCFill,
   sql: PiFileSqlFill,
-  verilog: IoHardwareChipOutline,
+  swift: SiSwift,
+  ruby: SiRuby,
   typescript: BiLogoTypescript,
   kotlin: TbBrandKotlin,
 };
 
 const isUUIDMatch = (inputString) => {
   const regex =
-    /(c|cpp|csharp|dart|go|htmlcssjs|java|javascript|julia|kotlin|mongodb|perl|python|ruby|rust|scala|sql|swift|typescript|verilog)-([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})/;
+    /(c|cpp|csharp|dart|go|htmlcssjs|java|javascript|kotlin|python|ruby|rust|sql|swift|typescript)-([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})/;
   return regex.test(inputString);
 };
 
@@ -82,11 +73,10 @@ const ShareEditor = ({ isDarkMode }) => {
   const icon = languageIcons[language] || null;
 
   const formattedTitle = title
-    ? `${title.charAt(0).toUpperCase()}${
-        title.length > 30
-          ? title.slice(1, 30) + "..." + title.slice(-3)
-          : title.slice(1)
-      }`
+    ? `${title.charAt(0).toUpperCase()}${title.length > 30
+      ? title.slice(1, 30) + "..." + title.slice(-3)
+      : title.slice(1)
+    }`
     : "";
 
   const formattedExpiryTime = expiryTime

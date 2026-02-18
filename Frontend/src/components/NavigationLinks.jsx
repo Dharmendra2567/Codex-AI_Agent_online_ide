@@ -49,19 +49,9 @@ const navLinks = [
     classes: "bg-gradient-to-br from-cyan-500 to-blue-600 motion-delay-[800ms]",
   },
   {
-    to: "/verilog",
-    text: "Verilog",
-    classes: "bg-gradient-to-br from-gray-600 to-zinc-800 motion-delay-[850ms]",
-  },
-  {
     to: "/sql",
     text: "SQL",
     classes: "bg-gradient-to-br from-indigo-600 to-blue-700 motion-delay-[900ms]",
-  },
-  {
-    to: "/mongodb",
-    text: "MongoDB",
-    classes: "bg-gradient-to-br from-emerald-500 to-teal-700 motion-delay-[950ms]",
   },
   {
     to: "/swift",
@@ -87,21 +77,6 @@ const navLinks = [
     to: "/kotlin",
     text: "Kotlin",
     classes: "bg-gradient-to-br from-violet-600 to-purple-800 motion-delay-[1200ms]",
-  },
-  {
-    to: "/perl",
-    text: "Perl",
-    classes: "bg-gradient-to-br from-pink-600 to-rose-700 motion-delay-[1250ms]",
-  },
-  {
-    to: "/scala",
-    text: "Scala",
-    classes: "bg-gradient-to-br from-red-600 to-rose-700 motion-delay-[1300ms]",
-  },
-  {
-    to: "/julia",
-    text: "Julia",
-    classes: "bg-gradient-to-br from-emerald-600 to-green-800 motion-delay-[1350ms]",
   },
 ];
 
